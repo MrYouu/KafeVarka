@@ -221,7 +221,7 @@ body
     position: absolute;
     width: 100px;
     height: 4px;
-    bottom: 100;
+    top: 600;
     left: 30;
     background-color: #F2F2F2;
     opacity: .5;
@@ -233,7 +233,7 @@ body
 {
     position: absolute;
     font-size: 35px;
-    bottom: 30;
+    top: 650;
     left: 30;
     padding: 5px 5px;
     color: #F2F2F2;
@@ -243,7 +243,7 @@ body
 {
     position: absolute;
     font-size: 35px;
-    bottom: 30;
+    top: 650;
     left: 100;
     padding: 5px 5px;
     color: #F2F2F2;
@@ -253,7 +253,7 @@ body
 {
     position: absolute;
     font-size: 35px;
-    bottom: 30;
+    top: 650;
     left: 175;
     padding: 5px 5px;
     color: #F2F2F2;
