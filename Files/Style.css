@@ -1046,4 +1046,56 @@ body
         padding: 12px 22px;
     }
 }
+
+@media screen and (max-width: 410px)
+{
+    .leftPlane img.Logo, .rightPlane img.Logo
+    {
+        right: -50;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .topBar a
+    {
+        padding: 12px 15px;
+        font-size: 20px;
+        top: 20px;
+        left: 0;
+    }
+
+    .leftPlane
+    {
+        height: 850px;
+    }
+
+    .leftPlane h1.Title
+    {
+        top: 100;
+    }
+    
+    .leftPlane div.Line
+    {
+        top: 250;
+    }
+    
+    .leftPlane div.activeLine
+    {
+        top: 250;
+    }
+    
+    .leftPlane p
+    {
+        font-size: 22px;
+        top: 250;
+        left: 30;
+        padding-right: 60px;
+    }
+
+    .leftPlane img.Logo, .rightPlane img.Logo
+    {
+        top: 450;
+    }
+}
 /*#endregion Media 500-450 */
