@@ -4,7 +4,6 @@ function openSideMenu()
 {
     document.getElementById("theHallThing").style.transform = "rotate(-10deg) translate(380px, 100px)";
     document.getElementById("theHallThing").style.borderTopLeftRadius = "40px";
-    document.getElementById("body").style.position = "unset";
     document.getElementById("body").style.marginRight = "-10px"
 
     window.scroll(
@@ -19,15 +18,13 @@ function closeSideMenu()
 {
     document.getElementById("theHallThing").style.transform = "unset";
     document.getElementById("theHallThing").style.borderTopLeftRadius = "0px";
-    document.getElementById("body").style.position = "relative";
     document.getElementById("body").style.marginRight = "0px"
 }
 
 function openSideMenuPP()
 {
-    document.getElementById("theHallThing-PP").style.transform = "rotate(-10deg) translate(830px, 110px)";
+    document.getElementById("theHallThing-PP").style.transform = "rotate(-10deg) translate(750px, 110px)";
     document.getElementById("theHallThing-PP").style.borderTopLeftRadius = "40px";
-    document.getElementById("body").style.position = "unset";
     document.getElementById("body").style.marginRight = "-10px"
 
     window.scroll(
@@ -42,7 +39,6 @@ function closeSideMenuPP()
 {
     document.getElementById("theHallThing-PP").style.transform = "unset";
     document.getElementById("theHallThing-PP").style.borderTopLeftRadius = "0px";
-    document.getElementById("body").style.position = "relative";
     document.getElementById("body").style.marginRight = "0px"
 }
 

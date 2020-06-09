@@ -7,8 +7,6 @@ html
 
 body
 {
-    position: relative;
-
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
@@ -57,9 +55,9 @@ body
 
 .theHallThing-PP
 {
-    position: relative;
+    position: static;
     width: 100%;
-    height: 5950px;
+    height: 5950px;/*5950px*/
     background-color: #F2F2F2;
     overflow: hidden;
     transform: unset;
@@ -537,11 +535,25 @@ body
 .bottomPlane
 {
     float: left;
-    position: relative;
+    position: absolute;
     width: 100%;
     height: calc(100% - 700px);
     top: 700;
     left: 0;
+    background-image: linear-gradient(to top, #323449 30%, #5a5f73);
+    overflow: hidden;
+
+    z-index: 3;
+    clip-path: polygon(0 0, 100% 150px, 100% 100%, 0 100%);
+
+    transition: ease .3s;
+}
+
+.theHallThing-PP .bottomPlane
+{
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
     background-image: linear-gradient(to top, #323449 30%, #5a5f73);
     overflow: hidden;
 
@@ -606,6 +618,12 @@ body
     transition: ease .3s;
 }
 
+.bottomPlane .policyItselfe
+{
+    margin-top: 200px;
+    height: auto;
+}
+
 .bottomPlane p.normalText, .bottomPlane h1, .bottomPlane h2, .bottomPlane h3, .bottomPlane ul
 {
     color: #F2F2F2;
@@ -658,6 +676,7 @@ body
 
 .bottomBar-PP
 {
+    position: relative;
     width: 100%;
     height: 200px;
     margin-top: 210px;
@@ -878,6 +897,11 @@ p.Credits managed:hover my
         left: 30;
         padding-right: calc(50% + 20px);
     }
+
+    .leftPlane img.Logo, .rightPlane img.Logo
+    {
+        top: 350;
+    }
 }
 
 @media screen and (max-width: 1000px)
@@ -918,7 +942,7 @@ p.Credits managed:hover my
     .leftPlane img.Logo, .rightPlane img.Logo
     {
         width: 300px;
-        top: 300;
+        top: 370;
         right: 30;
     }
 }
@@ -959,7 +983,7 @@ p.Credits managed:hover my
         height: 1780px;
     }
 
-    .bottomBar
+    .bottomBar, .BottomBar-PP
     {
         height: 380px;
     }
