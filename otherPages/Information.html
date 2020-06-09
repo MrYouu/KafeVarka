@@ -1,9 +1,16 @@
+<!--The HTML code is property to Mr. You (Kristiyan Valchev) and can only be viewed-->
+<!--If you want to use part of the code, please first contact me: krisvalchev@gmail.com-->
+
 <html id = "html">
     <head>
         <link href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel = "stylesheet">
         <link type = "text/css" rel = "stylesheet" href = "../Files/Style.css">
         <link rel = "icon" href = "../Images/Logo.png" type = "image" sizes = "16x16">
 
+        <meta charset = "utf-8">
+        <meta name = "description" content = "This is a website for coffee-shop">
+        <meta name = "keywords" content = "coffee, coffee-shop, milk, milkshake, Ruse, Varna, Gabrovo">
+        <meta name = "author" content = "Kristiyan Valchev">
         <meta name = "viewport" content = "width = device-width, user-scalable = no, initial-scale = 1.0" />
         
         <script type = "text/javascript" src = "../Files/Functions.js"></script>
@@ -11,8 +18,7 @@
 
         <title>За нас</title>
 
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArEVVHEP4I7dM4vnaoUH6RsicYJcfRMkM&libraries=geometry">
-        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArEVVHEP4I7dM4vnaoUH6RsicYJcfRMkM&libraries=geometry"></script>
         <!--
         <script type = "text/javascript"> 
             var geocoder;
@@ -75,6 +81,44 @@
     </head>
 
     <body id = "body" onload = "initialize()">
+        <!-- #region Loader -->
+        <div class = "Loader">
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+			<div class="obj"></div>
+        </div>
+
+        <script>
+            window.addEventListener("load", function ()
+			{
+				const Loader = document.querySelector(".Loader")
+				Loader.className += " hidden";
+            });
+
+            window.scroll(
+            {
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+
+            function toInformation()
+			{
+				window.scroll(
+				{
+					top: 500,
+					left: 0,
+					behavior: 'smooth'
+				});
+			}
+		</script>
+        <!-- #endregion Loader -->
+
         <div class = "sideMenu">
             <a onclick = "closeSideMenu()" class = "closeButton">
                 <div></div>
