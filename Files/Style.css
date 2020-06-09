@@ -1051,7 +1051,14 @@ body
 {
     .leftPlane img.Logo, .rightPlane img.Logo
     {
+        width: 250px;
+        top: 470;
         right: -50;
+    }
+
+    .rightPlane img.backgrondImage, .rightPlane img.Logo, .leftPlane, .topBar, .leftPlane img.Logo
+    {
+        position: absolute;
     }
 }
 
@@ -1095,7 +1102,7 @@ body
 
     .leftPlane img.Logo, .rightPlane img.Logo
     {
-        top: 450;
+        top: 500;
     }
 }
 /*#endregion Media 500-450 */
