@@ -1,1 +1,1049 @@
+html
+{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 
+body
+{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    background-color: #262626;
+    overflow-x: hidden;
+}
+
+/*#region Scrow bar */
+::-webkit-scrollbar
+{
+	width: 10px;
+}
+
+::-webkit-scrollbar-track
+{
+    background-color: #BFBFBF;
+    border-radius: 70px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background: #5a5f73; 
+	border-radius: 70px;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+	background: #323449; 
+}
+/*#endregion Scrow bar */
+
+/*#region The hall thing */
+.theHallThing
+{
+    position: relative;
+    width: 100%;
+    height: 1600px;
+    background-color: #F2F2F2;
+    overflow: hidden;
+    transform: unset;
+
+    transition: ease .3s;
+}
+/*#endregion The hall thing */
+
+/*#region Side menu */
+.sideMenu
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #262626;
+
+    z-index: 0;
+
+    transition: ease .3s;
+}
+
+.sideMenu a
+{
+    text-decoration: none;
+
+    transition: ease .3s;
+}
+
+.sideMenu a.closeButton
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 30;
+    left: 30;
+    background-color: transparent;
+
+    transition: ease .3s;
+}
+
+.sideMenu a.closeButton div
+{
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    top: 50%;
+    left: 0;
+    background-color: #F2F2F2;
+
+    transition: ease .3s;
+}
+
+.sideMenu a.closeButton div:nth-child(1)
+{
+    transform: rotate(45deg);
+}
+
+.sideMenu a.closeButton div:nth-child(2)
+{
+    transform: rotate(-45deg);
+}
+
+.sideMenu a.closeButton:hover div
+{
+    width: 65px;
+    background-color: #BFBFBF;
+}
+
+.sideMenu a.Avatar
+{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 160;
+    left: 30;
+    background-color: transparent;
+
+    transition: ease .3s;
+}
+
+.sideMenu a.Avatar div
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #F2F2F2;
+    border-radius: 999px;
+
+    transition: ease .3s;
+}
+
+.sideMenu a.Avatar div i
+{
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 17px);
+    font-size: 40px;
+    color: #262626;
+}
+
+.sideMenu p.Nikname
+{
+    position: absolute;
+    top: 220;
+    left: 30;
+    font-size: 30px;
+    color: #F2F2F2;
+
+    transition: ease .3s;
+}
+
+.sideMenu p.Nikname bold
+{
+    font-weight: bold;
+}
+
+.sideMenu div.Menu
+{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 370;
+    left: 0;
+
+    transition: ease .3s;
+}
+
+.sideMenu div.Menu a
+{
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 30px;
+    line-height: 55px;
+    color: #F2F2F2;
+
+    transition: ease .3s;
+}
+
+.sideMenu div.Menu a:hover
+{
+    color: #BFBFBF;
+}
+
+.sideMenu div.Menu a:hover i
+{
+    color: #49aa9f;
+    transition: ease .3s;
+}
+
+.sideMenu div.Menu:after
+{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.sideMenu div.Menu:before
+{
+    content: '';
+    display: block;
+    margin-top: -1.25em;
+}
+
+.sideMenu .Line
+{
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    bottom: 100;
+    left: 30;
+    background-color: #F2F2F2;
+    opacity: .5;
+
+    transition: ease .3s;
+}
+
+.sideMenu a.contactButtomF
+{
+    position: absolute;
+    font-size: 35px;
+    bottom: 30;
+    left: 30;
+    padding: 5px 5px;
+    color: #F2F2F2;
+}
+
+.sideMenu a.contactButtomM
+{
+    position: absolute;
+    font-size: 35px;
+    bottom: 30;
+    left: 100;
+    padding: 5px 5px;
+    color: #F2F2F2;
+}
+
+.sideMenu a.contactButtomP
+{
+    position: absolute;
+    font-size: 35px;
+    bottom: 30;
+    left: 175;
+    padding: 5px 5px;
+    color: #F2F2F2;
+}
+
+.sideMenu a.contactButtomF:hover, .sideMenu a.contactButtomM:hover
+{
+    color: #3b5998;
+}
+
+.sideMenu a.contactButtomP:hover
+{
+    color: #BFBFBF;
+}
+/*#endregion Side menu */
+
+/*#region Top bar */
+.topBar
+{
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    z-index: 2;
+
+    transition: ease .3s;
+    animation: dropDown .5s ease-out forwards .3s;
+    transform: translateY(-110px);
+    opacity: 0;
+}
+
+.topBar a
+{
+    display: inline;
+    position: relative;
+    padding: 12px 20px;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(242, 242, 242, 0.863);
+    top: calc(50% - 35px);
+    left: 50px;
+
+    transition: ease .3s;
+    animation: fadeIn .5s ease-out forwards .3s;
+    opacity: 0;
+}
+
+.topBar a::before
+{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    bottom: -5px;
+    left: 5%;
+    background-color: #5a5f73;
+    visibility: hidden;
+    transform: scaleX(0);
+
+    transition: ease .3s;
+}
+
+.topBar a.Logo
+{
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.topBar a otherColor
+{
+    color: #F2F2F2;
+    transition: ease .3s;
+}
+
+.topBar a:hover
+{
+    color: #323449;
+}
+
+.topBar a:hover::before
+{
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.topBar a.Logo
+{
+    color: #F2F2F2;
+}
+
+.topBar a:hover otherColor
+{
+    color: #323449;
+}
+
+.topBar a.threeLineButton
+{
+    display: none;
+    float: right;
+    width: 70px;
+    height: 35px;
+    left: -50;
+    background-color: transparent;
+    padding: 0;
+
+    transition: ease .3s;
+}
+
+.topBar a.threeLineButton div
+{
+    float: right;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    right: 0;
+    background-color: #F2F2F2;
+
+    transition: ease .3s;
+}
+
+.topBar a.threeLineButton div:nth-child(1)
+{
+    width: 100%;
+    top: 0;
+}
+
+.topBar a.threeLineButton div:nth-child(2)
+{
+    width: 75%;
+    top: calc(50% - 2px);
+}
+
+.topBar a.threeLineButton div:nth-child(3)
+{
+    width: 100%;
+    bottom: 0;
+}
+
+.topBar a.threeLineButton:hover::before
+{
+    transform: scaleX(0);
+}
+
+.topBar a.threeLineButton:hover div
+{
+    background-color: #323449;
+    width: 100%;
+}
+/*#endregion Top bar */
+
+/*#region Planes */
+.rightPlane
+{
+    float: right;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to top, #323449 60%, #5a5f73);
+
+    z-index: 0;
+
+    transition: ease .3s;
+}
+
+.rightPlane img.backgrondImage
+{
+    float: right;
+    position: fixed;
+    width: 1200px;
+    top: 0;
+    right: 0;
+    filter: blur(3px) brightness(.5);
+
+    transition: ease .3s;
+}
+
+.rightPlane img.Logo
+{
+    float: right;
+    position: fixed;
+    width: 350px;
+    top: 300;
+    right: 140;
+    perspective: 100px;
+
+    z-index: 1;
+
+    transition: ease .3s;
+}
+
+.leftPlane
+{
+    float: left;
+    position: fixed;
+    width: 100%;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    /*background-image: linear-gradient(30deg, #b21117 40%, #eb292f);*/
+    background-image: linear-gradient(30deg, #49aa9f 40%, #61d7cb);
+    box-shadow: 5px 10px 20px black;
+
+    z-index: 1;
+    clip-path: polygon(0 0, 90% 0, 0 100%, 0 100%);
+
+    transition: ease .3s;
+}
+
+.leftPlane img.Logo
+{
+    float: right;
+    position: fixed;
+    width: 350px;
+    top: 300;
+    right: 140;
+    perspective: 100px;
+
+    z-index: 1;
+
+    transition: ease .3s;
+}
+
+.leftPlane h1.Title
+{
+    position: absolute;
+    font-size: 70px;
+    top: 200;
+    left: 120;
+    color: #F2F2F2;
+
+    z-index: 2;
+
+    transition: ease .3s;
+}
+
+.leftPlane div.Line
+{
+    position: absolute;
+    width: calc(100% - 140px);
+    height: 7px;
+    top: 360;
+    left: 70;
+    background-color: #F2F2F2;
+    opacity: .4;
+
+    z-index: 2;
+
+    transition: ease .3s;
+}
+
+.leftPlane div.activeLine
+{
+    position: absolute;
+    width: 200px;
+    height: 7px;
+    top: 360;
+    left: 70;
+    background-color: #F2F2F2;
+    opacity: .6;
+
+    z-index: 2;
+
+    transition: ease .3s;
+}
+
+.leftPlane p
+{
+    position: absolute;
+    font-size: 24px;
+    top: 360;
+    left: 70;
+    color: #F2F2F2;
+    padding-right: calc(50% + 20px);
+
+    transition: ease .3s;
+}
+
+.bottomPlane
+{
+    float: left;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 700px);
+    top: 700;
+    left: 0;
+    background-image: linear-gradient(to top, #323449 30%, #5a5f73);
+    overflow: hidden;
+
+    z-index: 3;
+    clip-path: polygon(0 0, 100% 150px, 100% 100%, 0 100%);
+
+    transition: ease .3s;
+}
+
+.bottomPlane img.Textute
+{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    mix-blend-mode: darken;
+    opacity: .1;
+
+    transition: ease .3s;
+}
+
+.bottomPlane h1.toDrinkTitle
+{
+    position: relative;
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    top: 130px;
+    font-weight: bolder;
+    color: #F2F2F2;
+
+    transition: ease .3s;
+}
+
+.bottomPlane h1.toDrinkTitle br
+{
+    display: none;
+}
+
+.bottomPlane h1.newsTitle
+{
+    position: relative;
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    top: 400px;
+    font-weight: bolder;
+    color: #F2F2F2;
+
+    transition: ease .3s;
+}
+
+.bottomPlane p
+{
+    position: relative;
+    font-size: 25px;
+    top: 180px;
+    left: 120;
+    padding-right: 240px;
+    color: #F2F2F2;
+
+    transition: ease .3s;
+}
+
+.bottomPlane a.randomDrinkButton
+{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    top: 230px;
+    left: 120;
+    font-weight: bold;
+    padding: 22px 50px;
+    color: #F2F2F2;
+    background-color:#49aa9f;
+    border-radius: 999px;
+
+    transition: ease .3s;
+}
+
+.bottomPlane a.randomDrinkButton:hover
+{
+    background-color:#49aa9fab;
+}
+/*#endregion Planes */
+
+/*#region Bottom bar */
+.BottomBar
+{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 700;
+    left: 0;
+    background-color: #262626;
+
+    z-index: 5;
+    clip-path: polygon(0 40px, 100% 0, 100% 100%, 0% 100%);
+
+    transition: ease .3s;
+}
+
+.BottomBar div.Links
+{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 70;
+    left: 0;
+    text-align: justify;
+    background-color: transparent;
+
+    transition: ease .3s;
+}
+
+.bottomBar .Links:after
+{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.bottomBar .Links:before
+{
+    content: '';
+    display: block;
+    margin-top: -1.25em;
+}
+
+.BottomBar .Links a
+{
+    width: 33%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    display: inline-block;
+    color: #BFBFBF;
+    padding-top: 20px;
+
+    transition: ease .3s;
+}
+
+.BottomBar .Links a:hover
+{
+    color: #5a5f73;
+}
+
+.bottomBar p.Credits
+{
+    position: absolute;
+    width: 100%;
+    top: 155;
+    left: 0;
+    bottom: -10;
+    font-size: 16px;
+    text-align: center;
+    color: #5a5f73;
+
+    transition: ease .3s;
+}
+
+.bottomBar p.Credits powerd:hover phx
+{
+    color: #ff3c00a0;
+    transition: ease .3s;
+}
+
+.bottomBar p.Credits managed:hover my
+{
+    color: #61d0fca0;
+    transition: ease .3s;
+}
+/*#endregion Bottom bar */
+
+/*#region Animations */
+@keyframes dropDown
+{
+    0%
+    {
+        transform: translateY(-110px);
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 1;
+    }
+}
+/*#endregion Animations */
+
+/*#region Media 1300-1000 */
+@media screen and (max-width: 1300px)
+{
+    .leftPlane h1.Title
+    {
+        font-size: 70px;
+        top: 180;
+        left: 60;
+    }
+
+    .leftPlane div.Line
+    {
+        top: 340;
+        left: 30;
+    }
+
+    .leftPlane div.activeLine
+    {
+        top: 340;
+        left: 30;
+
+        z-index: 2;
+    }
+
+    .leftPlane p
+    {
+        top: 340;
+        left: 30;
+        padding-right: calc(50% + 20px);
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+
+}
+
+@media screen and (max-width: 1100px)
+{
+    .topBar a
+    {
+        display: none;
+    }
+
+    .topBar a.Logo, .topBar a.threeLineButton
+    {
+        display: inline;
+    }
+
+    .leftPlane
+    {
+        clip-path: polygon(0 0, 100% 0, 100% 30%, 0 80%);
+    }
+
+    .leftPlane h1.Title
+    {
+        font-size: 70px;
+        top: 130;
+        left: 60;
+    }
+
+    .leftPlane div.Line
+    {
+        width: calc(100% - 60px);
+        top: 290;
+        left: 30;
+    }
+
+    .leftPlane div.activeLine
+    {
+        top: 290;
+        left: 30;
+
+        z-index: 2;
+    }
+
+    .leftPlane p
+    {
+        top: 290;
+        left: 30;
+        padding-right: calc(50% + 20px);
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+
+}
+/*#endregion Media 1300-1000 */
+
+/*#region Media 900-800 */
+@media screen and (max-width: 900px)
+{
+    .leftPlane h1.Title
+    {
+        font-size: 50px;
+        top: 130;
+        left: 60;
+    }
+    
+    .leftPlane div.Line
+    {
+        width: calc(100% - 60px);
+        top: 250;
+    }
+    
+    .leftPlane div.activeLine
+    {
+        top: 250;
+    }
+    
+    .leftPlane p
+    {
+        font-size: 22px;
+        top: 270;
+        left: 30;
+        padding-right: calc(50% - 100px);
+    }
+
+    .leftPlane img.Logo, .rightPlane img.Logo
+    {
+        width: 300px;
+        top: 300;
+        right: 30;
+    }
+}
+
+@media screen and (max-width: 850px)
+{
+    .bottomPlane h1.toDrinkTitle
+    {
+        width: auto;
+        text-align: left;
+        left: 30;
+        font-size: 40px;
+    }
+
+    .bottomPlane p
+    {
+        font-size: 20px;
+        top: 170px;
+        left: 60;
+        padding-right: 120px;
+    }
+
+    .bottomPlane a.randomDrinkButton
+    {
+        font-size: 24px;
+        top: 230px;
+        left: 60;
+        padding: 12px 30px;
+    }
+
+    .BottomBar .Links a
+    {
+        width: 100%;
+    }
+
+    .theHallThing
+    {
+        height: 1700px;
+    }
+
+    .BottomBar
+    {
+        height: 300px;
+    }
+
+    .bottomBar p.Credits
+    {
+        top: 250;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+
+}
+/*#endregion Media 900-800 */
+
+/*#region Media 700-600 */
+@media screen and (max-width: 700px)
+{
+    .leftPlane img.Logo, .rightPlane img.Logo
+    {
+        top: 400;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .topBar a
+    {
+        padding: 12px 20px;
+        font-size: 26px;
+        top: 30px;
+        left: 15;
+    }
+
+    .topBar a.threeLineButton
+    {
+        left: -30;
+    }
+
+    .leftPlane
+    {
+        height: 750px;
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 70%);
+    }
+
+    .leftPlane h1.Title
+    {
+        font-size: 40px;
+        top: 120;
+        left: 30;
+    }
+    
+    .leftPlane div.Line
+    {
+        top: 220;
+        left: 15;
+    }
+    
+    .leftPlane div.activeLine
+    {
+        width: 100px;
+        top: 220;
+        left: 15;
+    }
+    
+    .leftPlane p
+    {
+        font-size: 20px;
+        top: 230;
+        left: 15;
+        padding-right: 30px;
+    }
+
+    .bottomPlane h1.toDrinkTitle
+    {
+        width: auto;
+        font-size: 36px;
+        text-align: left;
+        left: 30;
+    }
+
+    .bottomPlane h1.toDrinkTitle br
+    {
+        display: inline;
+    }
+
+    .bottomPlane p
+    {
+        font-size: 20px;
+        top: 140px;
+        left: 60;
+        padding-right: 120px;
+    }
+
+    .bottomPlane a.randomDrinkButton
+    {
+        font-size: 24px;
+        top: 200px;
+        left: 60;
+        padding: 12px 30px;
+    }
+}
+/*#endregion Media 700-600 */
+
+/*#region Media 500-450 */
+@media screen and (max-width: 500px)
+{
+    .bottomBar p.Credits
+    {
+        top: 230;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .bottomPlane h1.toDrinkTitle
+    {
+        font-size: 32px;
+        left: 30;
+    }
+
+    .bottomPlane p
+    {
+        font-size: 18px;
+        left: 40;
+        padding-right: 120px;
+    }
+
+    .bottomPlane a.randomDrinkButton
+    {
+        top: 200px;
+        left: 40px;
+        padding: 12px 22px;
+    }
+}
+/*#endregion Media 500-450 */
