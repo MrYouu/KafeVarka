@@ -128,26 +128,12 @@ body
     transition: ease .3s;
 }
 
-.sideMenu a.Avatar div
+.sideMenu a.Avatar img
 {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #F2F2F2;
     border-radius: 999px;
-
-    transition: ease .3s;
-}
-
-.sideMenu a.Avatar div i
-{
-    position: absolute;
-    top: calc(50% - 20px);
-    left: calc(50% - 17px);
-    font-size: 40px;
-    color: #262626;
 }
 
 .sideMenu p.Nikname
@@ -716,6 +702,7 @@ body
 }
 /*#endregion Bottom bar */
 
+
 /*#region Animations */
 @keyframes dropDown
 {
@@ -1056,7 +1043,7 @@ body
         right: -50;
     }
 
-    .rightPlane img.backgrondImage, .rightPlane img.Logo, .leftPlane, .topBar, .leftPlane img.Logo
+    .rightPlane img.Logo, .leftPlane, .topBar, .leftPlane img.Logo
     {
         position: absolute;
     }
@@ -1106,3 +1093,59 @@ body
     }
 }
 /*#endregion Media 500-450 */
+
+/*#region Media 350 */
+@media screen and (max-width: 350px)
+{
+    .topBar a
+    {
+        top: 15px;
+    }
+
+    .topBar a.Logo
+    {
+        font-size: 26px;
+        top: 23;
+    }
+
+    .topBar a.threeLineButton
+    {
+        width: 40px;
+    }
+
+    .leftPlane
+    {
+        height: 900px;
+    }
+
+    .leftPlane img.Logo, .rightPlane img.Logo
+    {
+        width: 200px;
+        top: 550;
+    }
+
+    .leftPlane p
+    {
+        font-size: 18px;
+        top: 260;
+        padding-right: 30px;
+    }
+
+    .bottomPlane h1.toDrinkTitle
+    {
+        font-size: 28px;
+    }
+
+    .bottomPlane p
+    {
+        font-size: 16px;
+        padding-right: 60px;
+    }
+
+    .bottomPlane a.randomDrinkButton
+    {
+        font-size: 20px;
+        top: 180px;
+    }
+}
+/*#endregion Media 350 */
