@@ -59,7 +59,7 @@ body
 {
     position: relative;
     width: 100%;
-    height: 5970px;
+    height: 5950px;
     background-color: #F2F2F2;
     overflow: hidden;
     transform: unset;
@@ -659,7 +659,7 @@ body
 .bottomBar-PP
 {
     width: 100%;
-    height: 100%;
+    height: 200px;
     margin-top: 210px;
     background-color: #262626;
 
@@ -797,21 +797,8 @@ p.Credits managed:hover my
 /*#endregion Animations */
 
 /*#region Media 1300-1000 */
-@media screen and (max-width: 1366px)
+@media screen and (max-width: 1300px)
 {
-    .theHallThing-PP
-    {
-        height: 3000px;
-    }
-}
-
-@media screen and (max-width: 1295px)
-{
-    .theHallThing-PP
-    {
-        height: 6300px;
-    }
-
     .leftPlane h1.Title
     {
         font-size: 70px;
@@ -841,36 +828,13 @@ p.Credits managed:hover my
     }
 }
 
-@media screen and (max-width: 1250px)
-{
-    .theHallThing-PP
-    {
-        height: 6400px;
-    }
-}
-
 @media screen and (max-width: 1200px)
 {
-    .theHallThing-PP
-    {
-        height: 6500px;
-    }
-}
-@media screen and (max-width: 1150px)
-{
-    .theHallThing-PP
-    {
-        height: 6600px;
-    }
+
 }
 
 @media screen and (max-width: 1100px)
 {
-    .theHallThing-PP
-    {
-        height: 6700px;
-    }
-
     .topBar a
     {
         display: none;
@@ -916,20 +880,9 @@ p.Credits managed:hover my
     }
 }
 
-@media screen and (max-width: 1025px)
-{
-    .theHallThing-PP
-    {
-        height: 6680px;
-    }
-}
-
 @media screen and (max-width: 1000px)
 {
-    .theHallThing-PP
-    {
-        height: 7300px;
-    }
+
 }
 /*#endregion Media 1300-1000 */
 
@@ -972,11 +925,6 @@ p.Credits managed:hover my
 
 @media screen and (max-width: 850px)
 {
-    .theHallThing-PP
-    {
-        height: 7900px;
-    }
-
     .bottomPlane h1.toDrinkTitle
     {
         width: auto;
@@ -1016,7 +964,7 @@ p.Credits managed:hover my
         height: 380px;
     }
 
-    .bottomBar p.Credits
+    p.Credits
     {
         top: 330;
     }
@@ -1026,101 +974,19 @@ p.Credits managed:hover my
         margin-top: 180px;
     }
 }
-
-@media screen and (max-width: 823px)
-{
-    .theHallThing-PP
-    {
-        height: 7410px;
-    }
-}
 /*#endregion Media 900-800 */
 
 /*#region Media 700-600 */
-@media screen and (max-width: 750px)
-{
-    .theHallThing-PP
-    {
-        height: 8100px;
-    }
-}
-
-@media screen and (max-width: 737px)
-{
-    .theHallThing-PP
-    {
-        height: 7770px;
-    }
-}
-
-@media screen and (max-width: 731px)
-{
-    .theHallThing-PP
-    {
-        height: 7770px;
-    }
-}
-
-@media screen and (max-width: 718px)
-{
-    .theHallThing-PP
-    {
-        height: 8300px;
-    }
-}
-
 @media screen and (max-width: 700px)
 {
-    .theHallThing-PP
-    {
-        height: 8600px;
-    }
-
     .leftPlane img.Logo, .rightPlane img.Logo
     {
         top: 400;
     }
 }
 
-@media screen and (max-width: 655px)
-{
-    .theHallThing-PP
-    {
-        height: 8900px;
-    }
-}
-
-@media screen and (max-width: 655px)
-{
-    .theHallThing-PP
-    {
-        height: 8500px;
-    }
-}
-
-@media screen and (max-width: 640px)
-{
-    .theHallThing-PP
-    {
-        height: 8500px;
-    }
-}
-
-@media screen and (max-width: 615px)
-{
-    .theHallThing-PP
-    {
-        height: 9100px;
-    }
-}
-
 @media screen and (max-width: 600px)
 {
-    .theHallThing-PP
-    {
-        height: 9400px;
-    }
-
     .topBar a
     {
         padding: 12px 20px;
@@ -1199,75 +1065,17 @@ p.Credits managed:hover my
 }
 /*#endregion Media 700-600 */
 
-/*#region Media 572-450 */
-@media screen and (max-width: 572px)
-{
-    .theHallThing-PP
-    {
-        height: 9700px;
-    }
-}
-
-@media screen and (max-width: 568px)
-{
-    .theHallThing-PP
-    {
-        height: 9050px;
-    }
-}
-
-@media screen and (max-width: 550px)
-{
-    .theHallThing-PP
-    {
-        height: 9900px;
-    }
-}
-
-@media screen and (max-width: 535px)
-{
-    .theHallThing-PP
-    {
-        height: 10100px;
-    }
-}
-
-@media screen and (max-width: 515px)
-{
-    .theHallThing-PP
-    {
-        height: 10500px;
-    }
-}
-
+/*#region Media 500-450 */
 @media screen and (max-width: 500px)
 {
-    .theHallThing-PP
-    {
-        height: 11000px;
-    }
-
     p.Credits
     {
-        top: 320;
-    }
-}
-
-@media screen and (max-width: 465px)
-{
-    .theHallThing-PP
-    {
-        height: 11700px;
+        top: 310;
     }
 }
 
 @media screen and (max-width: 450px)
 {
-    .theHallThing-PP
-    {
-        height: 12000px;
-    }
-
     .bottomPlane h1.toDrinkTitle
     {
         font-size: 32px;
@@ -1289,14 +1097,6 @@ p.Credits managed:hover my
     }
 }
 
-@media screen and (max-width: 425px)
-{
-    .theHallThing-PP
-    {
-        height: 11500px;
-    }
-}
-
 @media screen and (max-width: 410px)
 {
     .leftPlane img.Logo, .rightPlane img.Logo
@@ -1314,11 +1114,6 @@ p.Credits managed:hover my
 
 @media screen and (max-width: 400px)
 {
-    .theHallThing-PP
-    {
-        height: 13480px;
-    }
-
     .topBar a
     {
         padding: 12px 15px;
@@ -1360,7 +1155,7 @@ p.Credits managed:hover my
         top: 500;
     }
 }
-/*#endregion Media 572-450 */
+/*#endregion Media 500-450 */
 
 /*#region Media 350 */
 @media screen and (max-width: 350px)
