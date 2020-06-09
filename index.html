@@ -1,0 +1,110 @@
+<html id = "html">
+    <head>
+        <link href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel = "stylesheet">
+        <link type = "text/css" rel = "stylesheet" href = "Files/Style.css">
+        <link rel = "icon" href = "Images/Logo.png" type = "image" sizes = "16x16">
+
+        <meta name = "viewport" content = "width = device-width, user-scalable = no" />
+        
+        <script type = "text/javascript" src = "Files/Functions.js"></script>
+        <script src = "https://kit.fontawesome.com/190623e0b3.js" crossorigin = "anonymous"></script>
+
+        <title>КафеВарка</title>
+    </head>
+
+    <body id = "body">
+        <div class = "sideMenu">
+            <a onclick = "closeSideMenu()" class = "closeButton">
+                <div></div>
+                <div></div>
+            </a>
+
+            <a class = "Avatar">
+                <div>
+                    <i class = "far fa-user"></i>
+                </div>
+            </a>
+
+            <p class = "Nikname">Здравей, <br><bold>приятел</bold></p>
+
+            <div class = "Menu">
+                <a href = "#"><i class = "fas fa-home" style = "padding-left: 3px; padding-right: 25px;"></i>Начало</a>
+                <a href = "#"><i class = "fas fa-coffee" style = "padding-right: 23px;"></i>Меню</a>
+                <a href = "#"><i class = "fas fa-info" style = "padding-left: 13px; padding-right: 37px;"></i>За нас</a>
+                <a href = "#"><i class = "fas fa-map-marker-alt" style = "padding-left: 7px; padding-right: 30px;"></i>Контакти</a>
+            </div>
+
+            <div class = "Line"></div>
+
+            <a href = "https://www.facebook.com/Kafevarka" class = "contactButtomF" target = "_blank">
+                <i class = "fab fa-facebook-f"></i>
+            </a>
+            <a href = "https://www.facebook.com/messages/t/Kafevarka"  class = "contactButtomM" target = "_blank">
+                <i class = "fab fa-facebook-messenger"></i>
+            </a>
+            <a href = "tel:087 630 0069"  class = "contactButtomP">
+                <i class = "fas fa-phone-alt"></i>
+            </a>
+        </div>
+
+        <div class = "theHallThing" id = "theHallThing">
+            <div class = "topBar" id = "topBar">
+                <a href = "index.html" class = "Logo">КАФЕ<otherColor>ВАРКА</otherColor></a>
+                <a href = "#" style = "margin-left: 70px;">Меню</a>
+                <a href = "#">За нас</a>
+                <a href = "#">Контакти</a>
+
+                <a onclick = "openSideMenu()" class = "threeLineButton">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
+            </div>
+
+            <div class = "rightPlane">
+                <img src = "Images/Image01.png" class = "backgrondImage">
+                <img src = "Images/Logo.png" class = "Logo">
+            </div>
+
+            <div class = "leftPlane">
+                <h1 class = "Title">Магазин за кафе</h1>
+
+                <div class = "Line"></div>
+                <div class = "activeLine"></div>
+
+                <p>
+                    Магазини за кафе, топли и студени напитки в картонени чашки с капаче.
+                    Вземи кафето със себе си на разходка, в офиса или на път!
+                </p>
+
+                <img src = "Images/Logo.png" class = "Logo">
+            </div>
+            <div class = "bottomPlane">
+                <img src = "Images/Textures/lettersDark02.png" class = "Textute">
+
+                <h1 class = "toDrinkTitle">Чудите се какво <br>да пиете?</h1>
+                
+                <p>
+                    Може би вече сте опитали голяма част от нашите напитки или точно обратното - 
+                    не сте опитвали нищо ново? Е, позволи ни да Ви предложим нещо случайно от
+                    нашето меню...
+                </p>
+                
+                <a onclick = "" class = "randomDrinkButton">Случайна напитка</a>
+
+                <div class = "BottomBar">
+                    <div class = "Links">
+                        <a href = "#">Меню</a>
+                        <a href = "#">За нас</a>
+                        <a href = "#">Контакти</a>
+                    </div>
+
+                    <p class = "Credits">
+                        <powerd>Site powered by <phx>Phoenix Development</phx>.</powerd>
+                        <managed> Managed by <my>Mr.You</my></managed>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
