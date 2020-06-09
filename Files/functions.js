@@ -1,4 +1,7 @@
-window.onscroll = function() { scrollFunction() };
+//  The JavaScript code is property to Mr. You (Kristiyan Valchev) and can only be viewed
+//  If you want to use part of the code, please first contact me: krisvalchev@gmail.com
+
+//window.onscroll = function() { scrollFunction() };
 
 function openSideMenu()
 {
@@ -42,7 +45,7 @@ function closeSideMenuPP()
     document.getElementById("body").style.marginRight = "0px"
 }
 
-function scrollFunction()
-{
-
-}
+//function scrollFunction()
+//{
+//
+//}
