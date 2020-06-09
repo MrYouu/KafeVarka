@@ -189,6 +189,11 @@ body
     transition: ease .3s;
 }
 
+.sideMenu div.Menu a.Active
+{
+    color: #49aa9f;
+}
+
 .sideMenu div.Menu a:hover
 {
     color: #BFBFBF;
@@ -319,6 +324,11 @@ body
 {
     font-size: 32px;
     font-weight: bolder;
+}
+
+.topBar a.Active
+{
+    color: #323449;
 }
 
 .topBar a otherColor
