@@ -490,6 +490,11 @@ body
     transition: ease .3s;
 }
 
+.leftPlane h1.Title hyphen
+{
+    display: none;
+}
+
 .leftPlane div.Line
 {
     position: absolute;
@@ -1233,6 +1238,11 @@ p.Credits managed:hover my
     {
         font-size: 20px;
         top: 180px;
+    }
+
+    .leftPlane h1.Title hyphen
+    {
+        display: inline;
     }
 }
 /*#endregion Media 350 */
