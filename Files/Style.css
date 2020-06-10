@@ -528,6 +528,7 @@ body
     transition: ease .3s;
     animation: rightPlane .3s ease-out forwards .1s;
     clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
+    -webkit-clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
     opacity: 0;
 }
 
@@ -574,10 +575,13 @@ body
 
     z-index: 1;
     clip-path: polygon(0 0, 90% 0, 0 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 90% 0, 0 100%, 0 100%);
+    
 
     transition: ease .3s;
     animation: leftPlane .3s ease-out forwards .3s;
     clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
     opacity: 0;
 }
 
@@ -683,6 +687,7 @@ body
 
     z-index: 3;
     clip-path: polygon(0 0, 100% 150px, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 150px, 100% 100%, 0 100%);
 
     transition: ease .3s;
     animation: dropDown .5s ease-out forwards 1.4s;
@@ -700,6 +705,7 @@ body
 
     z-index: 3;
     clip-path: polygon(0 0, 100% 150px, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 150px, 100% 100%, 0 100%);
 
     transition: ease .3s;
 }
@@ -811,6 +817,7 @@ body
 
     z-index: 5;
     clip-path: polygon(0 40px, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 40px, 100% 0, 100% 100%, 0% 100%);
 
     transition: ease .3s;
 }
@@ -825,6 +832,7 @@ body
 
     z-index: 5;
     clip-path: polygon(0 40px, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 40px, 100% 0, 100% 100%, 0% 100%);
 
     transition: ease .3s;
 }
@@ -975,12 +983,14 @@ p.Credits managed:hover my
     0%
     {
         clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
+        -webkit-clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
         opacity: 0;
     }
 
     100%
     {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         opacity: 1;
     }
 }
@@ -990,12 +1000,14 @@ p.Credits managed:hover my
     0%
     {
         clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+        -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
         opacity: 0;
     }
 
     100%
     {
         clip-path: polygon(0 0, 90% 0, 0 100%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 90% 0, 0 100%, 0 100%);
         opacity: 1;
     }
 }
@@ -1053,6 +1065,7 @@ p.Credits managed:hover my
     .leftPlane
     {
         clip-path: polygon(0 0, 100% 0, 100% 30%, 0 80%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 0 80%);
     }
 
     @keyframes leftPlane
@@ -1060,12 +1073,14 @@ p.Credits managed:hover my
         0%
         {
             clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+            -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
             opacity: 0;
         }
 
         100%
         {
             clip-path: polygon(0 0, 100% 0, 100% 30%, 0 80%);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 0 80%);
             opacity: 1;
         }
     }
@@ -1229,6 +1244,7 @@ p.Credits managed:hover my
     {
         height: 750px;
         clip-path: polygon(0 0, 100% 0, 100% 50%, 0 70%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 70%);
     }
 
     @keyframes leftPlane
@@ -1236,12 +1252,14 @@ p.Credits managed:hover my
         0%
         {
             clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+            -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
             opacity: 0;
         }
 
         100%
         {
             clip-path: polygon(0 0, 100% 0, 100% 50%, 0 70%);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 70%);
             opacity: 1;
         }
     }
