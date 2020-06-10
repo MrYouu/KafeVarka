@@ -154,7 +154,7 @@ body
 {
     position: static;
     width: 100%;
-    height: 1600px;/*5950px*/
+    height: 1000px;/*5950px*/
     background-color: #262626;
     overflow: hidden;
     transform: unset;
@@ -718,6 +718,7 @@ body
     left: 0;
     mix-blend-mode: darken;
     opacity: .1;
+    cursor: context-menu;
 
     transition: ease .3s;
 }
@@ -804,6 +805,170 @@ body
     background-color:#49aa9fab;
 }
 /*#endregion Planes */
+
+/*#region Information */
+div.locationHolder
+{
+    position: relative;
+    width: calc(100% - 60px);
+    height: 350px;
+    top: 0;
+    left: 30;
+    background-color: transparent;
+    margin-top: 50px;
+
+    transition: ease .3s;
+}
+
+div.locationHolder iframe
+{
+    position: absolute;
+    width: 500px;
+    height: calc(100% - 20px);
+    top: 10;
+    left: 10;
+
+    transition: ease .3s;
+}
+
+div.locationHolder h1
+{
+    position: absolute;
+    font-size: 50px;
+    top: 15;
+    left: 550;
+    color: #61d7cb;
+    padding: 0;
+    margin: 0;
+
+    transition: ease .3s;
+}
+
+div.locationHolder h3.coffeeShopName
+{
+    position: absolute;
+    font-size: 36px;
+    top: 90;
+    left: 550;
+    color: #F2F2F2;
+    padding: 0;
+    margin: 0;
+
+    transition: ease .3s;
+}
+
+div.locationHolder .locationText
+{
+    position: relative;
+    top: 160;
+    left: 550;
+    font-size: 28px;
+    color: #BFBFBF;
+    padding: 0;
+    padding-right: 580px;
+    margin: 0;
+
+    transition: ease .3s;
+}
+
+div.locationHolder .workHour
+{
+    position: relative;
+    top: 170;
+    left: 550;
+    font-size: 28px;
+    color: #BFBFBF;
+    padding: 0;
+    padding-right: 580px;
+    margin: 0;
+
+    transition: ease .3s;
+}
+
+div.locationHolder .workHour br.note, div.locationHolder .workHour br.hour
+{
+    display: none;
+
+    transition: ease .3s;
+}
+
+div.locationHolder .workHour note
+{
+    margin-left: 30px;
+    color: #61d7cb;
+
+    transition: ease .3s;
+}
+
+div.locationHolder i
+{
+    font-size: 26;
+    color: #49aa9f;
+
+    transition: ease .3s;
+}
+
+div.locationHolder:hover
+{
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+/*#endregion Information */
+
+/*#region Contacts */
+div.contactHolder
+{
+    position: relative;
+    width: calc(100% - 120px);
+    height: auto;
+    top: 0;
+    left: 60;
+    margin-top: 200px;
+
+    transition: ease .3s;
+}
+
+div.contactHolder a
+{
+    display: table;
+    font-size: 40px;
+    text-decoration: none;
+    color: #F2F2F2;
+    line-height: 80px;
+
+    transition: ease .3s;
+}
+
+div.contactHolder a i
+{
+    font-size: 38px;
+    color: #49aa9f;
+
+    transition: ease .3s;
+}
+
+div.contactHolder a inside
+{
+    font-size: 36px;
+    color: #BFBFBF;
+
+    transition: ease .3s;
+}
+
+div.contactHolder a br
+{
+    display: none;
+}
+
+div.contactHolder a:hover inside
+{
+    opacity: .6;
+}
+
+div.contactHolder a:hover i
+{
+    color: #61d7cb;
+}
+/*#endregion Contacts */
 
 /*#region Bottom bar */
 .bottomBar
@@ -933,6 +1098,17 @@ p.Credits managed:hover my
 }
 /*#endregion Bottom bar */
 
+img
+{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+
+    z-index: -2;
+}
 
 /*#region Animations */
 @keyframes dropDown
@@ -1043,11 +1219,68 @@ p.Credits managed:hover my
         left: 30;
         padding-right: calc(50% + 20px);
     }
+
+    div.locationHolder .workHour br.note
+    {
+        display: inline;
+    }
+
+    div.locationHolder .workHour note
+    {
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width: 1200px)
 {
 
+}
+
+@media screen and (max-width: 1150px)
+{
+    div.locationHolder
+    {
+        height: 670px;
+    }
+
+    div.locationHolder iframe
+    {
+        width: calc(100% - 30px);
+        height: 330px;
+        top: 90;
+        left: 15;
+    }
+
+    div.locationHolder h1
+    {
+        top: 10;
+        left: 20;
+    }
+
+    div.locationHolder h3.coffeeShopName
+    {
+        top: 440;
+        left: 20;
+    }
+
+    div.locationHolder .locationText
+    {
+        top: 510;
+        left: 20;
+        padding-right: 40px;
+    }
+
+    div.locationHolder .workHour
+    {
+        top: 530;
+        left: 20;
+        padding-right: 40px;
+    }
+
+    div.locationHolder .workHour note
+    {
+        line-height: 60px;
+    }
 }
 
 @media screen and (max-width: 1100px)
@@ -1118,11 +1351,24 @@ p.Credits managed:hover my
     {
         top: 350;
     }
+
+    div.locationHolder
+    {
+        height: 700px;
+    }
 }
 
 @media screen and (max-width: 1000px)
 {
+    div.contactHolder a br
+    {
+        display: inline;
+    }
 
+    div.contactHolder a inside
+    {
+        padding-left: 70px;
+    }
 }
 /*#endregion Media 1300-1000 */
 
@@ -1223,6 +1469,23 @@ p.Credits managed:hover my
     {
         top: 400;
     }
+
+    div.contactHolder a
+    {
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    div.contactHolder a i
+    {
+        font-size: 24px;
+    }
+
+    div.contactHolder a inside
+    {
+        font-size: 22px;
+        padding-left: 50px;
+    }
 }
 
 @media screen and (max-width: 600px)
@@ -1320,6 +1583,21 @@ p.Credits managed:hover my
         left: 60;
         padding: 12px 30px;
     }
+
+    div.locationHolder .locationText
+    {
+        font-size: 22px;
+    }
+
+    div.locationHolder .workHour
+    {
+        font-size: 22px;
+    }
+
+    div.locationHolder i
+    {
+        font-size: 22;
+    }
 }
 /*#endregion Media 700-600 */
 
@@ -1329,6 +1607,29 @@ p.Credits managed:hover my
     p.Credits
     {
         top: 310;
+    }
+
+    div.locationHolder
+    {
+        width: calc(100% - 30px);
+        height: 660px;
+        left: 15;
+    }
+
+    div.locationHolder .locationText, div.locationHolder .workHour
+    {
+        font-size: 18px;
+    }
+
+    div.contactHolder
+    {
+        width: calc(100% - 60px);
+        left: 30;
+    }
+
+    div.contactHolder a inside
+    {
+        padding-left: 0px;
     }
 }
 
@@ -1352,6 +1653,16 @@ p.Credits managed:hover my
         top: 200px;
         left: 40px;
         padding: 12px 22px;
+    }
+
+    div.locationHolder .workHour br.hour
+    {
+        display: inline;
+    }
+
+    div.locationHolder
+    {
+        height: 700px;
     }
 }
 
@@ -1411,6 +1722,22 @@ p.Credits managed:hover my
     .leftPlane img.Logo, .rightPlane img.Logo
     {
         top: 500;
+    }
+
+    div.contactHolder a
+    {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    div.contactHolder a i
+    {
+        font-size: 20px;
+    }
+
+    div.contactHolder a inside
+    {
+        font-size: 17px;
     }
 }
 /*#endregion Media 500-450 */
