@@ -33,13 +33,13 @@ body
 
 ::-webkit-scrollbar-thumb
 {
-	background: #5a5f73; 
+	background: #fdb03c; 
 	border-radius: 70px;
 }
 
 ::-webkit-scrollbar-thumb:hover
 {
-	background: #323449; 
+	background: #a8701b; 
 }
 /*#endregion Scrow bar */
 
@@ -79,7 +79,7 @@ body
 {
 	width: 15px;
 	height: 40px;
-	background: #3b5998;
+	background: #fde03c;
 	margin: 0 3px;
 	border-radius: 10px;
 	animation: Loader 0.8s infinite;
@@ -118,7 +118,7 @@ body
 {
 	0%
 	{
-        background: #3b5998;
+        background: #fde03c;
 		height: 0;
 	}
 	
@@ -129,7 +129,7 @@ body
 	
 	100%
 	{
-        background: #61d7cb;
+        background: #a8701b;
 		height: 0;
 	}
 }
@@ -224,7 +224,7 @@ body
 .sideMenu a.closeButton:hover div
 {
     width: 65px;
-    background-color: #BFBFBF;
+    background-color: #fde03c;
 }
 
 .sideMenu a.Avatar
@@ -290,7 +290,12 @@ body
 
 .sideMenu div.Menu a.Active
 {
-    color: #49aa9f;
+    color: #fde03c;
+}
+
+.sideMenu div.Menu a.Active:hover, .sideMenu div.Menu a.Active:hover i
+{
+    color: #dbc01a;
 }
 
 .sideMenu div.Menu a:hover
@@ -300,7 +305,7 @@ body
 
 .sideMenu div.Menu a:hover i
 {
-    color: #49aa9f;
+    color: #fde03c;
     transition: ease .3s;
 }
 
@@ -395,7 +400,7 @@ body
     font-size: 26px;
     font-weight: bold;
     text-decoration: none;
-    color: rgba(242, 242, 242, 0.863);
+    color: #323449;
     top: calc(50% - 35px);
     left: 50px;
 
@@ -415,7 +420,7 @@ body
     background-color: #5a5f73;
     visibility: hidden;
     transform: scaleX(0);
-
+    
     transition: ease .3s;
 }
 
@@ -423,22 +428,23 @@ body
 {
     font-size: 32px;
     font-weight: bolder;
+    color: #323449;
 }
 
 .topBar a.Active
 {
-    color: #323449;
+    color: #7a6b17;
 }
 
 .topBar a otherColor
 {
-    color: #F2F2F2;
+    color: #323449;
     transition: ease .3s;
 }
 
 .topBar a:hover
 {
-    color: #323449;
+    color: #7a6b17;
 }
 
 .topBar a:hover::before
@@ -447,14 +453,14 @@ body
     transform: scaleX(1);
 }
 
-.topBar a.Logo
+.topBar a.Logo:hover
 {
-    color: #F2F2F2;
+    color: #323449;
 }
 
 .topBar a:hover otherColor
 {
-    color: #323449;
+    color: #7a6b17;
 }
 
 .topBar a.threeLineButton
@@ -477,7 +483,7 @@ body
     width: 100%;
     height: 4px;
     right: 0;
-    background-color: #F2F2F2;
+    background-color: #323449;
 
     transition: ease .3s;
 }
@@ -507,7 +513,7 @@ body
 
 .topBar a.threeLineButton:hover div
 {
-    background-color: #323449;
+    background-color: #7a6b17;
     width: 100%;
 }
 /*#endregion Top bar */
@@ -569,8 +575,8 @@ body
     height: 1000px;
     top: 0;
     left: 0;
-    /*background-image: linear-gradient(30deg, #b21117 40%, #eb292f);*/
-    background-image: linear-gradient(30deg, #49aa9f 40%, #61d7cb);
+    background-image: linear-gradient(30deg, #fde03c 40%, #ffec84);
+    /*background-image: linear-gradient(30deg, #49aa9f 40%, #61d7cb);*/
     box-shadow: 5px 10px 20px black;
 
     z-index: 1;
@@ -608,7 +614,7 @@ body
     font-size: 70px;
     top: 200;
     left: 120;
-    color: #F2F2F2;
+    color: #323449;
 
     z-index: 2;
 
@@ -630,7 +636,7 @@ body
     height: 7px;
     top: 360;
     left: 70;
-    background-color: #F2F2F2;
+    background-color: #323449;
     opacity: .4;
 
     z-index: 2;
@@ -648,7 +654,7 @@ body
     height: 7px;
     top: 360;
     left: 70;
-    background-color: #F2F2F2;
+    background-color: #323449;
     opacity: .6;
 
     z-index: 2;
@@ -665,7 +671,7 @@ body
     font-size: 24px;
     top: 360;
     left: 70;
-    color: #F2F2F2;
+    color: #323449;
     padding-right: calc(50% + 20px);
 
     transition: ease .3s;
@@ -682,7 +688,9 @@ body
     height: calc(100% - 700px);
     top: 700;
     left: 0;
-    background-image: linear-gradient(to top, #323449 30%, #5a5f73);
+    color: #fde03c;
+    background-image: linear-gradient(to top, #a8701b 30%, #fdb03c);
+    /*background-image: linear-gradient(to top, #323449 30%, #5a5f73);*/
     overflow: hidden;
 
     z-index: 3;
@@ -700,7 +708,8 @@ body
     width: 100%;
     height: auto;
     margin-top: 0px;
-    background-image: linear-gradient(to top, #323449 30%, #5a5f73);
+    background-image: linear-gradient(to top, #a8701b 30%, #fdb03c);
+    /*background-image: linear-gradient(to top, #323449 30%, #5a5f73);*/
     overflow: hidden;
 
     z-index: 3;
@@ -781,7 +790,7 @@ body
 
 .bottomPlane a
 {
-    color: #49aa9f;
+    color: #dbc01a;
 }
 
 .bottomPlane a.randomDrinkButton
@@ -793,8 +802,8 @@ body
     left: 120;
     font-weight: bold;
     padding: 22px 50px;
-    color: #F2F2F2;
-    background-color:#49aa9f;
+    color: #262626;
+    background-color:#fde03c;
     border-radius: 999px;
 
     transition: ease .3s;
@@ -802,7 +811,7 @@ body
 
 .bottomPlane a.randomDrinkButton:hover
 {
-    background-color:#49aa9fab;
+    background-color:#dbc01a;
 }
 /*#endregion Planes */
 
@@ -837,7 +846,7 @@ div.locationHolder h1
     font-size: 50px;
     top: 15;
     left: 550;
-    color: #61d7cb;
+    color: #ffec84;
     padding: 0;
     margin: 0;
 
@@ -863,7 +872,7 @@ div.locationHolder .locationText
     top: 160;
     left: 550;
     font-size: 28px;
-    color: #BFBFBF;
+    color: #e1e1e1;
     padding: 0;
     padding-right: 580px;
     margin: 0;
@@ -877,7 +886,7 @@ div.locationHolder .workHour
     top: 170;
     left: 550;
     font-size: 28px;
-    color: #BFBFBF;
+    color: #e1e1e1;
     padding: 0;
     padding-right: 580px;
     margin: 0;
@@ -895,7 +904,7 @@ div.locationHolder .workHour br.note, div.locationHolder .workHour br.hour
 div.locationHolder .workHour note
 {
     margin-left: 30px;
-    color: #61d7cb;
+    color: #fde03c;
 
     transition: ease .3s;
 }
@@ -903,7 +912,7 @@ div.locationHolder .workHour note
 div.locationHolder i
 {
     font-size: 26;
-    color: #49aa9f;
+    color: #ffec84;
 
     transition: ease .3s;
 }
@@ -941,7 +950,7 @@ div.contactHolder a
 div.contactHolder a i
 {
     font-size: 38px;
-    color: #49aa9f;
+    color: #ffec84;
 
     transition: ease .3s;
 }
@@ -949,7 +958,7 @@ div.contactHolder a i
 div.contactHolder a inside
 {
     font-size: 36px;
-    color: #BFBFBF;
+    color: #e1e1e1;
 
     transition: ease .3s;
 }
@@ -966,7 +975,7 @@ div.contactHolder a:hover inside
 
 div.contactHolder a:hover i
 {
-    color: #61d7cb;
+    color: #fde03c;
 }
 /*#endregion Contacts */
 
@@ -1011,7 +1020,7 @@ div.contactHolder a:hover i
 {
     position: relative;
     font-size: 25px;
-    color: #61d7cb;
+    color: #ccc;
 }
 
 .gridLineRow
@@ -1043,7 +1052,8 @@ div.contactHolder a:hover i
     height: 200px;
     top: 700;
     left: 0;
-    background-color: #262626;
+    background-color: #241501;
+    /*background-color: #262626;*/
 
     z-index: 5;
     clip-path: polygon(0 40px, 100% 0, 100% 100%, 0% 100%);
@@ -1058,7 +1068,7 @@ div.contactHolder a:hover i
     width: 100%;
     height: 200px;
     margin-top: 210px;
-    background-color: #262626;
+    background-color: #241501;
 
     z-index: 5;
     clip-path: polygon(0 40px, 100% 0, 100% 100%, 0% 100%);
@@ -1107,20 +1117,6 @@ div.contactHolder a:hover i
     transition: ease .3s;
 }
 
-.Links a
-{
-    display: table;
-    width: 24%;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-    display: inline-block;
-    color: #BFBFBF;
-    padding-top: 20px;
-
-    transition: ease .3s;
-}
-
 .Links a.Active
 {
     opacity: .5;
@@ -1128,7 +1124,7 @@ div.contactHolder a:hover i
 
 .Links a:hover
 {
-    color: #5a5f73;
+    color: #fdb03c;
 }
 
 p.Credits
@@ -1140,7 +1136,7 @@ p.Credits
     bottom: -10;
     font-size: 16px;
     text-align: center;
-    color: #5a5f73;
+    color: #555;
 
     transition: ease .3s;
 }
@@ -1756,7 +1752,7 @@ a
         right: -50;
     }
 
-    .rightPlane img.Logo, .leftPlane, .topBar, .leftPlane img.Logo
+    .rightPlane img.Logo, .leftPlane, .topBar, .leftPlane img.Logo, .rightPlane
     {
         position: absolute;
     }
