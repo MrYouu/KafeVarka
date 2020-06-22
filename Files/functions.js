@@ -24,7 +24,7 @@ function openSideMenu()
     }
     else
     {
-        document.getElementById("theHallThing").style.transform = "translateX(400px)";
+        document.getElementById("theHallThing").style.left = "400px";
     }
 }
 
@@ -40,7 +40,7 @@ function closeSideMenu()
     }
     else
     {
-        document.getElementById("theHallThing").style.transform = "translateX(0px)";
+        document.getElementById("theHallThing").style.left = "0px";
     }
 }
 
