@@ -9,6 +9,7 @@ function openSideMenu()
     document.getElementById("theHallThing").style.borderTopLeftRadius = "40px";
     document.getElementById("theHallThing").style.webkitBorderTopLeftRadius = "40px";
     document.getElementById("body").style.marginRight = "-10px"
+    document.getElementById("backgrondImage").style.clipPath = "polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 20%)";
 
     window.scroll(
     {
@@ -24,6 +25,7 @@ function closeSideMenu()
     document.getElementById("theHallThing").style.borderTopLeftRadius = "0px";
     document.getElementById("theHallThing").style.webkitBorderTopLeftRadius = "0px";
     document.getElementById("body").style.marginRight = "0px"
+    document.getElementById("backgrondImage").style.clipPath = "polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0)";
 }
 
 //function scrollFunction()
